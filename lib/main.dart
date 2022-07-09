@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Basics LayoutT'),
+          child: Text('Basics LayoutTT'),
         ),
       ),
     );
