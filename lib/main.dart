@@ -10,11 +10,8 @@ class Home extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Padding(
-          padding: EdgeInsets.only(
-            left: 50,
-            top: 70,
-          ),
+        body: Align(
+          alignment: Alignment.bottomRight,
           child: Text(
             'Padding',
             style: TextStyle(
