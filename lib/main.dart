@@ -10,8 +10,16 @@ class Home extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Align(
-          alignment: Alignment.bottomRight,
+        body: Container(
+          decoration: BoxDecoration(
+            color: Colors.amber,
+            border: Border.all(width: 5),
+          ),
+          width: 300,
+          height: 200,
+          padding: EdgeInsets.all(16),
+          margin: EdgeInsets.all(30),
+          alignment: Alignment.center,
           child: Text(
             'Padding',
             style: TextStyle(
