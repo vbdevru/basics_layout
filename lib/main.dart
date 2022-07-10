@@ -10,20 +10,37 @@ class Home extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Container(
-          decoration: BoxDecoration(
-            color: Colors.indigo[100],
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Icon(Icons.adjust, size: 30, color: Colors.red,),
-              Icon(Icons.adjust, size: 30, color: Colors.green,),
-              Icon(Icons.adjust, size: 30, color: Colors.blue,),
-              Icon(Icons.adjust, size: 30, color: Colors.orange,),
-            ],
-          ),
+        body: Row(
+          children: [
+            Expanded(
+              flex: 4,
+              child: Image.network(
+                  'https://astromeridian.su/wp-content/uploads/2020/11/Y9WnhE.jpg'),
+            ),
+            Expanded(
+              flex: 3,
+              child: Container(
+                padding: EdgeInsets.all(30),
+                color: Colors.red,
+                child: Text('1'),
+              ),
+            ),
+            Expanded(
+              flex: 2,
+              child: Container(
+                padding: EdgeInsets.all(30),
+                color: Colors.green,
+                child: Text('2'),
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.all(30),
+                color: Colors.blue,
+                child: Text('3'),
+              ),
+            ),
+          ],
         ),
       ),
     );
