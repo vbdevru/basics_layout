@@ -12,19 +12,17 @@ class Home extends StatelessWidget {
       home: Scaffold(
         body: Container(
           decoration: BoxDecoration(
-            color: Colors.amber,
-            border: Border.all(width: 5),
+            color: Colors.indigo[100],
           ),
-          width: 300,
-          height: 200,
-          padding: EdgeInsets.all(16),
-          margin: EdgeInsets.all(30),
-          alignment: Alignment.center,
-          child: Text(
-            'Padding',
-            style: TextStyle(
-              fontSize: 30,
-            ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Icon(Icons.adjust, size: 30, color: Colors.red,),
+              Icon(Icons.adjust, size: 30, color: Colors.green,),
+              Icon(Icons.adjust, size: 30, color: Colors.blue,),
+              Icon(Icons.adjust, size: 30, color: Colors.orange,),
+            ],
           ),
         ),
       ),
