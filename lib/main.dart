@@ -8,9 +8,19 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Text('Basics Layout'),
+        body: Padding(
+          padding: EdgeInsets.only(
+            left: 50,
+            top: 70,
+          ),
+          child: Text(
+            'Padding',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
         ),
       ),
     );
